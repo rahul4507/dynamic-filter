@@ -6,8 +6,8 @@ from typing import Dict, Type, Optional, List, Set
 from django.db.models import Q, Model
 
 from .constants import SEARCH_PARAM, ORDERING_PARAM, ADVANCED_FILTER_PARAM, SKIP_PARAMS
-from fields_registry import FieldRegistry
-from filter_strategy import BaseFieldFilterStrategy, SearchFilterStrategy, \
+from .fields_registry import FieldRegistry
+from .filter_strategy import BaseFieldFilterStrategy, SearchFilterStrategy, \
     DateRangeFilterStrategy, DateTimeRangeFilterStrategy, AdvancedFilterStrategy
 from .utils import RequestValueExtractor, OrderingBuilder
 
